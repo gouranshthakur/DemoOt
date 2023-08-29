@@ -1,0 +1,224 @@
+/* The switch container */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+/* Hide the native checkbox input */
+.toggle-switch input {
+  display: none;
+}
+
+/* The slider (circle) */
+.slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 17px;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+/* Rounded edges of the slider */
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.2s;
+}
+
+/* The label (on/off text) */
+.label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2px 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Positioning the label for 'on' state */
+.toggle-switch.on .label {
+  left: 6px;
+}
+
+/* Positioning the label for 'off' state */
+.toggle-switch.off .label {
+  right: 6px;
+}
+
+/* Styling the slider for 'on' state */
+.toggle-switch.on .slider {
+  background-color: #52c41a; /* Green color */
+  transform: translateX(26px);
+}
+
+/* Styling the circle within the slider for 'on' state */
+.toggle-switch.on .slider:before {
+  background-color: #fff;
+}
+
+/* Styling the slider for 'off' state */
+.toggle-switch.off .slider {
+  background-color: #f5222d; /* Red color */
+  transform: translateX(0);
+}
+
+/* Styling the circle within the slider for 'off' state */
+.toggle-switch.off .slider:before {
+  background-color: #fff;
+}
+
+
+/* Toggle Switch new css */
+
+/* CSS rules are kept repetitive so that you can get CSS rules for each button easily :) */
+
+/* * {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+} */
+
+/* *:focus {
+  outline: none;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f1f9f9;
+}
+
+/* #app-cover {
+  display: table;
+  width: 600px;
+  margin: 80px auto;
+  counter-reset: button-counter;
+} */
+
+.row {
+  display: table-row;
+}
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;  
+  box-sizing: border-box;
+}
+
+.button-cover {  
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  /* top: 50%;
+  width: 74px;
+  height: 36px; */
+  /* margin: -20px auto 0 auto; */
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  /* width: 100%;
+  height: 100%; */
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button 1 */
+#button-1 .knobs:before {
+  content: "YES";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  /* padding: 9px 4px; */
+  background-color: green;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .checkbox:checked + .knobs:before {
+  content: "NO";
+  left: 42px;
+  background-color: #f44336;
+}
+
+#button-1 .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+#button-1 .knobs,
+#button-1 .knobs:before,
+#button-1 .layer {
+  transition: 0.3s ease all;
+}

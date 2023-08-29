@@ -1,0 +1,33 @@
+.current-time {
+    text-align: center;
+  }
+  
+  .small-text {
+    font-size: 10px;
+  }
+  
+  .large-text {
+    font-size: 50px;
+    margin-top: -10px;
+  }
+  
+  .medium-text {
+    font-size: 30px;
+    margin-top: -35px;
+  }
+  
+  /* Responsive styles using media queries */
+  
+  /* For screens up to 600px width (e.g., mobile) */
+  @media (max-width: 600px) {
+    .large-text {
+      font-size: 30px;
+      margin-top: 0; /* Adjust margin to create space */
+    }
+  
+    .medium-text {
+      font-size: 20px;
+      margin-top: -10px;
+    }
+  }
+  

@@ -1,0 +1,94 @@
+.temperature-controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .temperature-controller button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .temperature-controller button:hover {
+    background-color: #ddd;
+  }
+  
+  .temperature {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .controller-text {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 10px;
+    color: #010000;
+  }
+  
+  .temperature-controller img {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .temperature-controller > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  /* Temperature.css */
+
+.column1 {
+  display: flex;
+  flex-direction: row; /* Set flex-direction to row */
+  align-items: center; /* Align items vertically in the center */
+  margin-bottom: 16px; /* Add some space between each div */
+}
+
+.txt {
+  border: 2px solid green;
+  font-weight: bold;
+  margin-right: 8px; /* Add some space between the text and images */
+}
+
+.column1 > div {
+  flex: 1; /* Let both the image and ctrl div take equal width */
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  margin-right: 8px; /* Add some space between the image and ctrl div */
+}
+
+.img-container img {
+  height: 50px;
+  width: 50px;
+}
+
+.ctrl {
+  display: flex; /* Use flexbox for the "Ctrl" div */
+  align-items: center; /* Center items vertically within the "Ctrl" div */
+}
+
+.ctrl button {
+  margin-right: 8px; /* Add space between the buttons */
+}
+
+.column2{
+  border: 2px solid red;
+}
+
+  .img{
+    border: 2px solid blueviolet;
+
+  }

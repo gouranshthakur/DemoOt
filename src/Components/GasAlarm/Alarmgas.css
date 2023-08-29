@@ -1,0 +1,15 @@
+.div-container {
+    display: flex;
+  }
+  
+  .div-item {
+    flex: 1;
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+    /* margin: 2px; */
+    text-align: center;
+  }
+  
+  /* Responsive code */
+
+  

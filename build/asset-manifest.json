@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.131f88f9.css",
+    "main.js": "/static/js/main.43c1cade.js",
+    "static/js/787.00a17323.chunk.js": "/static/js/787.00a17323.chunk.js",
+    "static/media/weather1.png": "/static/media/weather1.34b4edfbebe84a6d9c50.png",
+    "static/media/temp1.png": "/static/media/temp1.31aacb89cf7514503bc8.png",
+    "static/media/pressurelogo1.png": "/static/media/pressurelogo1.74fbaca8841fa78b8f62.png",
+    "index.html": "/index.html",
+    "main.131f88f9.css.map": "/static/css/main.131f88f9.css.map",
+    "main.43c1cade.js.map": "/static/js/main.43c1cade.js.map",
+    "787.00a17323.chunk.js.map": "/static/js/787.00a17323.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.131f88f9.css",
+    "static/js/main.43c1cade.js"
+  ]
+}
